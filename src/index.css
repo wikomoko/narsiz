@@ -1,0 +1,17 @@
+
+@font-face {
+  font-family: 'Roboto_regular';
+  src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Roboto_regular';
+}
+
+.bg-color-main {
+  background-color: #cac9f3;
+}
+
+.color-main {
+  color: #cac9f3;
+}

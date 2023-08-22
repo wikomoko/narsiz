@@ -1,0 +1,37 @@
+.nih {
+    background-color: red; 
+    width: fit-content; 
+    /* width: 600px;  */
+    aspect-ratio: 1/1;
+   /* height: 600px; */
+}
+.pad {
+    /* height: 600px; */
+    /* width: 600px; */
+    position: relative;
+    background-color: white;
+    margin: auto;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-color: #cac9f3;
+    border-width: 3px;
+    border-style: dashed;
+}
+.cardx {
+
+    width: 300px;
+
+    position: absolute;
+    background-image: url('');
+    transform: scale(1, 1);
+    cursor: move;
+}
+.fore {
+    /* height: 600px; */
+    /* width: 600px; */
+
+    position: absolute;
+    background-size: cover;
+    cursor: move;
+
+}
