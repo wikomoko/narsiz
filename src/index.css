@@ -4,9 +4,9 @@
   src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
 }
 
-body {
-  font-family: 'Roboto_regular';
-}
+/* body {
+  font-family: 'san';
+} */
 
 .bg-color-main {
   background-color: #cac9f3;
