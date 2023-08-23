@@ -1,8 +1,6 @@
-import { useEffect, useRef, useState } from "react";
-import NavigationBar from "../../components/NavigationBar/NavigationBar";
-import './EditorPage.css'
+import { useRef, useState } from "react";
 import DomToImage from "dom-to-image";
-import { saveAs } from "file-saver";
+import './EditorPage.css'
 
 export default function EditorPage() {
     const [siz, setSiz] = useState(1)
@@ -122,8 +120,6 @@ export default function EditorPage() {
     }
     return (
         <>
-            <NavigationBar />
-
             <section>
                 <div className="container">
                     <div className="row">
