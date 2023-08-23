@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import DomToImage from "dom-to-image";
 import './EditorPage.css'
+import { saveAs } from "file-saver";
 
 export default function EditorPage() {
     const [siz, setSiz] = useState(1)
@@ -29,21 +30,21 @@ export default function EditorPage() {
 
     function onDrag(event) {
         if (!dragging) return;
-        console.log('jalan')
+        // console.log('jalan')
         setPosx(parseInt(posx) + event.movementX)
         setPosy(parseInt(posy) + event.movementY)
-        console.log(parseInt(posx) + event.movementX)
+        // console.log(parseInt(posx) + event.movementX)
 
     };
     function startDrag() {
         setDragging(true);
         setReduceOpacity(true)
-        console.log('mulai')
+        // console.log('mulai')
     };
     function endDrag() {
         setDragging(false);
         setReduceOpacity(false)
-        console.log('selesai')
+        // console.log('selesai')
     };
     function onTouch(e) {
         setMulaiX(e.changedTouches[0].clientX)
@@ -56,7 +57,7 @@ export default function EditorPage() {
         setPosy(photoRef.current.offsetTop + deltaY)
         setMulaiX(e.changedTouches[0].clientX)
         setMulaiY(e.changedTouches[0].clientY)
-        console.log(photoRef.current.offsetLeft + deltaX)
+        // console.log(photoRef.current.offsetLeft + deltaX)
     }
     function changePhotoSize(e) {
         if (e.target.value < 0) {
@@ -113,6 +114,7 @@ export default function EditorPage() {
     }
     function downloadResult() {
         DomToImage.toBlob(downloadArea.current).then((blob) => window.saveAs(blob, 'twibonAku.png'))
+        // console.log(downloadArea.current)
     }
     function changeRotation(e) {
         setRotationUi(e.target.value)
